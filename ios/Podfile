@@ -23,6 +23,7 @@ target 'SwiftReactNativeHybrid' do
   ]
   yoga_path = File.join(react_path, 'ReactCommon/yoga')
   pod 'Yoga', :path => yoga_path
+  pod 'Firebase/Core'
 
   target 'SwiftReactNativeHybridTests' do
     inherit! :search_paths

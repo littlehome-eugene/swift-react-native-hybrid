@@ -1,4 +1,24 @@
 PODS:
+  - Firebase/Core (4.8.0):
+    - FirebaseAnalytics (= 4.0.5)
+    - FirebaseCore (= 4.0.13)
+  - FirebaseAnalytics (4.0.5):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - nanopb (~> 0.3)
+  - FirebaseCore (4.0.13):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (2.0.8):
+    - FirebaseCore (~> 4.0)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - GoogleToolboxForMac/NSData+zlib (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
   - React/ART (0.45.1):
     - React/Core
   - React/BatchedBridge (0.45.1):
@@ -34,6 +54,7 @@ PODS:
   - Yoga (0.45.1.React)
 
 DEPENDENCIES:
+  - Firebase/Core
   - React/ART (from `../node_modules/react-native`)
   - React/BatchedBridge (from `../node_modules/react-native`)
   - React/Core (from `../node_modules/react-native`)
@@ -51,14 +72,20 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   React:
-    :path: "../node_modules/react-native"
+    :path: ../node_modules/react-native
   Yoga:
-    :path: "../node_modules/react-native/ReactCommon/yoga"
+    :path: ../node_modules/react-native/ReactCommon/yoga
 
 SPEC CHECKSUMS:
-  React: 0c9191a8b0c843d7004f950ac6b5f6cba9d125c7
-  Yoga: 89c8738d42a0b46a113acb4e574336d61cba2985
+  Firebase: 710decbbc6d9d48530e9a5dba3209740c3532e05
+  FirebaseAnalytics: 5b02a63ead2c3f0259cfc7f15e053e440587ecf8
+  FirebaseCore: 3c02ec652db3d03fdc8bc6d9154af3e20d64b6f5
+  FirebaseInstanceID: 81df5805a08001e69138664bdd02c6719a9ac80f
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  React: 4d1c1de15eab288db8de77e0c257a3e99f3cd7ce
+  Yoga: f2b1f5b59fadb774a3dd9932a7cf813c6e284d71
 
-PODFILE CHECKSUM: 9ff4af2d03b7631a817ad9da92036decc9935457
+PODFILE CHECKSUM: a0309e31ea5c17df4643b18b338a9be9c67909fe
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.4.0.rc.1
